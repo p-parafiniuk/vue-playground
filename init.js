@@ -1,10 +1,19 @@
 let ButtonComponent = {
-  template: `<button style="background-color: red">{{name}}</button>`,
+  template: `<button style="background-color: red">
+      <slot></slot>
+</button>`,
   props: {
     name: String,
   },
 };
 
+// let ButtonComponent = {
+//   template: `<button style="background-color: red">{{name}}</button>`,
+//   props: {
+//     name: String,
+//   },
+// };
+//
 // Global version
 // Vue.component("utton", {
 //   template: `<button style="background-color: red">BTN</button>`,
